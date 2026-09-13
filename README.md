@@ -7,7 +7,7 @@ A pure, framework-agnostic TypeScript constraint resolution engine designed to d
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Installation
 ```bash
@@ -67,7 +67,7 @@ npm run build
 
 ---
 
-## 🛠 Layout Resolution Algorithm (Step-by-Step)
+##  Layout Resolution Algorithm (Step-by-Step)
 
 The engine avoids pseudo-resolvers such as `if (surface === "mobile")` or CSS `@media` queries. Instead, layout decisions are derived purely from continuous mathematical constraints and geometry synthesis:
 
@@ -104,7 +104,7 @@ $$y \in [\text{usableY}, \text{usableY} + \text{usableH} - \text{height}]$$
 
 ---
 
-## 🎨 Dual Renderer Support
+##  Dual Renderer Support
 
 To prove total decoupling of the algorithm from React and the DOM, the project ships with two independent rendering backends consuming the exact same `ResolvedLayout`:
 1. **DOM/CSS Renderer (`src/render-dom.tsx`)**: Renders boxes into absolutely positioned React DOM nodes with CSS spring transitions.
@@ -114,7 +114,7 @@ Both renderers strictly render the exact same **MacBook Pro Midnight Blue** adve
 
 ---
 
-## 🏷 TypeScript Type System Design
+##  TypeScript Type System Design
 
 Strong typing guarantees that invalid specs or surface combinations are caught at compile-time:
 
@@ -152,7 +152,7 @@ export interface SurfaceProfile {
 
 ---
 
-## 🎯 Test Surface Profiles
+##  Test Surface Profiles
 
 1. **Mobile Portrait (320×480)**: Tall portrait interstitial with notch safe areas and 44px tap targets.
 2. **Mobile Landscape (667×375)**: Wide handheld screen adapting into a 2-column split.
@@ -163,7 +163,7 @@ export interface SurfaceProfile {
 
 ---
 
-## 🤖 AI Tools Disclosure
+##  AI Tools Disclosure
 
 OpenAI ChatGPT/Codex and Google Antigravity were used for code scaffolding, implementation assistance, debugging, documentation, and test-case suggestions.
 
@@ -171,12 +171,12 @@ The final implementation was reviewed and tested by the author, who is responsib
 
 ---
 
-## ⏳ Time Spent
+##  Time Spent
 - **Time Spent**: 3 days (~15 hours total across design, engine implementation, renderer decoupling, UI studio polish, testing & documentation).
 
 ---
 
-## 💡 Live Interview Cheat Sheet
+##  Live Interview Cheat Sheet
 
 ### 1. Demonstrating an Unknown 5th Surface Profile
 In the live demo, switch to the **"Custom Sandbox (5th Surface)"** tab. Adjust the width, height, safe area, or tap target sliders. The engine recalculates the spatial layout in real time without any code modifications.
